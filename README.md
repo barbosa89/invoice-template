@@ -2,7 +2,7 @@
 
 This an invoice template, Bootstrap 4 based.
 
-![Invoice](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Preview")
+![Invoice](https://github.com/barbosa89/invoice-template/blob/master/invoice.png "Preview")
 
 ## Contributions
 
