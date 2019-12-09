@@ -1,6 +1,6 @@
 # Invoice template
 
-This an invoice template, Bootstrap 4 based.
+This an invoice template, with support for Bootstrap 3 and Bootstrap 4.
 
 ![Invoice](https://github.com/barbosa89/invoice-template/blob/master/invoice.png "Preview")
 
