@@ -5,81 +5,14 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Invoice template - Bootstrap 3</title>
+    <title>Invoice template - Bootstrap 4</title>
 
     <!-- Styles -->
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
-        integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <style>
-        h1,
-        .h1,
-        h2,
-        .h2,
-        h3,
-        .h3 {
-            margin-top: 10px !important;
-        }
-
-        .img-fluid {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .mt-2 {
-            margin-top: 10px;
-        }
-
-        .mt-4 {
-            margin-top: 20px;
-        }
-
-        .mb-2 {
-            margin-bottom: 20px;
-        }
-
-        .mb-4 {
-            margin-bottom: 20px;
-        }
-
-        .my-2 {
-            margin: 0 10px;
-        }
-
-        .my-4 {
-            margin: 0 20px;
-        }
-
-        .mx-2 {
-            margin: 10px 0;
-        }
-
-        .mx-4 {
-            margin: 20px 0;
-        }
-
-        .py-2 {
-            padding: 0 10px;
-        }
-
-        .py-4 {
-            padding: 0 20px;
-        }
-
-        .d-block {
-            display: block;
-        }
-
-        .font-weight-light {
-            font-weight: 100;
-        }
-
-        .font-weight-bold {
-            font-weight: bold;
-        }
-
         .line {
-            border-bottom: 2px solid #000;
+            border-bottom: 3px solid #000;
             width: 100%;
         }
 
@@ -90,11 +23,12 @@
 
         .line-end {
             width: 100%;
-            border-bottom: 2px solid #f0c29e;
+            border-bottom: 3px solid #f0c29e;
         }
 
         .data {
             background-color: #dcdddf;
+            padding-left: 45px;
         }
 
         .data .data-box {
@@ -108,36 +42,18 @@
 
         .content {
             background-color: #f1f1f1;
+            padding-right: 45px;
         }
 
         .without-margin {
             margin: 0 !important;
         }
 
-        .qr-code {
-            margin: 0 auto;
-            display: block;
-        }
-
         /* To break in pages, please use this class */
+        /* https://github.com/barryvdh/laravel-snappy/issues/2 */
         .page {
             page-break-after: always;
             page-break-inside: avoid;
-        }
-
-        .row-equal {
-            display: table;
-        }
-
-        .row-equal .col-equal {
-            float: none;
-            display: table-cell;
-            vertical-align: top;
-        }
-
-        .spacer-lg {
-            margin: 20px;
-            display: block;
         }
     </style>
 </head>
@@ -146,33 +62,32 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="alert alert-info mt-4" role="alert">
-                    The invoice template with <b>bootstrap 4</b> support, <a href="invoice.bs4.html"
+                <div class="alert alert-secondary mt-4" role="alert">
+                    The invoice template with <b>bootstrap 3</b> support, <a href="invoice.bs3.html"
                         class="alert-link">click here</a>, enjoy.
                 </div>
             </div>
         </div>
     </div>
-    <div id="app" class="container invoice page">
-        <div class="row row-equal">
+    <div id="app" class="container invoice">
+        <div class="row">
             <!-- data -->
-            <div class="col-xs-4 data py-4 col-equal">
-                <div class="spacer-lg">&nbsp;</div>
-                <div class="line mb-4"></div>
+            <div class="col-4 data py-4">
+                <div class="line mt-4 mb-4"></div>
                 <h1>INVOICE</h1>
 
                 <div class="data-box">
-                    <div class="data-separator d-block"></div>
+                    <div class="data-separator d-block my-2"></div>
                     <h4 class="text-muted font-weight-light">No.</h4>
                     <h4 class="font-weight-bold">23123123123</h4>
                 </div>
                 <div class="data-box">
-                    <div class="data-separator d-block"></div>
+                    <div class="data-separator d-block my-2"></div>
                     <h4 class="text-muted font-weight-light">INVOICE DATE</h4>
                     <h4 class="font-weight-bold">January 05, 2018</h4>
                 </div>
                 <div class="data-box">
-                    <div class="data-separator d-block"></div>
+                    <div class="data-separator d-block my-2"></div>
                     <h4 class="text-muted font-weight-light">DUE DATE</h4>
                     <h4 class="font-weight-bold">January 25, 2018</h4>
                 </div>
@@ -188,7 +103,7 @@
                     <h6 class="font-weight-light">ACCOUNTING NUMBER</h6>
                     <p>1234567890988</p>
                     <h6 class="font-weight-light">QR CODE</h6>
-                    <img src="/images/qr.png" alt="" class="img-fluid qr-code">
+                    <img src="/images/qr.png" alt="" class="img-fluid">
                 </div>
                 <div class="data-box align-text-bottom">
                     <h1 class="font-weight-bold text-center">My company name</h1>
@@ -197,13 +112,12 @@
             <!-- end data -->
 
             <!-- content -->
-            <div class="col-xs-8 content py-4 col-equal">
-                <div class="spacer-lg">&nbsp;</div>
-                <div class="line mb-4"></div>
+            <div class="col-8 content py-4">
+                <div class="line mt-4 mb-4"></div>
                 <!-- header -->
                 <div class="header">
                     <div class="row">
-                        <div class="col-xs-6 from">
+                        <div class="col-6 from">
                             <span class="d-block font-weight-light">FROM:</span>
                             <h3>My Company</h3>
                             <span class="d-block font-weight-light">123.123.12312</span>
@@ -211,7 +125,7 @@
                             <span class="d-block font-weight-light">315 234 5677</span>
                             <span class="d-block font-weight-light">john@mycompany.com</span>
                         </div>
-                        <div class="col-xs-6 to">
+                        <div class="col-6 to">
                             <span class="d-block font-weight-light">TO:</span>
                             <h3>Customer</h3>
                             <span class="d-block font-weight-light">123.123.12312</span>
@@ -224,8 +138,8 @@
                 <!-- end header -->
 
                 <!-- note -->
-                <div class="row mt-4">
-                    <div class="col-xs-12">
+                <div class="row my-4">
+                    <div class="col-12">
                         <p class="text-justify">Quis sunt mollit nostrud aliqua consectetur voluptate eiusmod proident
                             aute laboris non reprehenderit magna qui. Esse occaecat laboris laborum dolore excepteur
                             enim laboris.</p>
@@ -236,14 +150,14 @@
                 <!-- items-header -->
                 <div class="items-header">
                     <div class="row mt-4 items-header font-weight-bold">
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-12 my-2">
                             <div class="line"></div>
                         </div>
-                        <div class="col-xs-6">DESCRIPTION</div>
-                        <div class="col-xs-2 text-center">PRICE</div>
-                        <div class="col-xs-2 text-center">QUANTITY</div>
-                        <div class="col-xs-2 text-right">TOTAL</div>
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-6">DESCRIPTION</div>
+                        <div class="col-2 text-center">PRICE</div>
+                        <div class="col-2 text-center">QUANTITY</div>
+                        <div class="col-2 text-right">TOTAL</div>
+                        <div class="col-12 my-2">
                             <div class="line"></div>
                         </div>
                     </div>
@@ -253,127 +167,95 @@
                 <!-- items -->
                 <div class="items">
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <p class="without-margin">Item of the invoice</p>
                             <p class="without-margin text-muted">
                                 <small>Date: 2018-02-14</small>
                             </p>
                         </div>
-                        <div class="col-xs-2 text-center">$ 2.000</div>
-                        <div class="col-xs-2 text-center">2</div>
-                        <div class="col-xs-2 text-right">$ 4.000</div>
+                        <div class="col-2 text-center">$ 2.000</div>
+                        <div class="col-2 text-center">2</div>
+                        <div class="col-2 text-right">$ 4.000</div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-12 my-2">
                             <div class="line-light"></div>
                         </div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <p class="without-margin">Item of the invoice</p>
                             <p class="without-margin text-muted">
                                 <small>Date: 2018-02-14</small>
                             </p>
                         </div>
-                        <div class="col-xs-2 text-center">$ 2.000</div>
-                        <div class="col-xs-2 text-center">2</div>
-                        <div class="col-xs-2 text-right">$ 4.000</div>
+                        <div class="col-2 text-center">$ 2.000</div>
+                        <div class="col-2 text-center">2</div>
+                        <div class="col-2 text-right">$ 4.000</div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-12 my-2">
                             <div class="line-light"></div>
                         </div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <p class="without-margin">Item of the invoice</p>
                             <p class="without-margin text-muted">
                                 <small>Date: 2018-02-14</small>
                             </p>
                         </div>
-                        <div class="col-xs-2 text-center">$ 2.000</div>
-                        <div class="col-xs-2 text-center">2</div>
-                        <div class="col-xs-2 text-right">$ 4.000</div>
+                        <div class="col-2 text-center">$ 2.000</div>
+                        <div class="col-2 text-center">2</div>
+                        <div class="col-2 text-right">$ 4.000</div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-12 my-2">
                             <div class="line-light"></div>
                         </div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <p class="without-margin">Item of the invoice</p>
                             <p class="without-margin text-muted">
                                 <small>Date: 2018-02-14</small>
                             </p>
                         </div>
-                        <div class="col-xs-2 text-center">$ 2.000</div>
-                        <div class="col-xs-2 text-center">2</div>
-                        <div class="col-xs-2 text-right">$ 4.000</div>
+                        <div class="col-2 text-center">$ 2.000</div>
+                        <div class="col-2 text-center">2</div>
+                        <div class="col-2 text-right">$ 4.000</div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-12 my-2">
                             <div class="line-light"></div>
                         </div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <p class="without-margin">Item of the invoice</p>
                             <p class="without-margin text-muted">
                                 <small>Date: 2018-02-14</small>
                             </p>
                         </div>
-                        <div class="col-xs-2 text-center">$ 2.000</div>
-                        <div class="col-xs-2 text-center">2</div>
-                        <div class="col-xs-2 text-right">$ 4.000</div>
+                        <div class="col-2 text-center">$ 2.000</div>
+                        <div class="col-2 text-center">2</div>
+                        <div class="col-2 text-right">$ 4.000</div>
                     </div>
                     <div class="row">
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-12 my-2">
                             <div class="line-light"></div>
                         </div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-6">
+                        <div class="col-6">
                             <p class="without-margin">Item of the invoice</p>
                             <p class="without-margin text-muted">
                                 <small>Date: 2018-02-14</small>
                             </p>
                         </div>
-                        <div class="col-xs-2 text-center">$ 2.000</div>
-                        <div class="col-xs-2 text-center">2</div>
-                        <div class="col-xs-2 text-right">$ 4.000</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 mx-2">
-                            <div class="line-light"></div>
-                        </div>
-                    </div>
-                    <div class="row mt-2 list-content">
-                        <div class="col-xs-6">
-                            <p class="without-margin">Item of the invoice</p>
-                            <p class="without-margin text-muted">
-                                <small>Date: 2018-02-14</small>
-                            </p>
-                        </div>
-                        <div class="col-xs-2 text-center">$ 2.000</div>
-                        <div class="col-xs-2 text-center">2</div>
-                        <div class="col-xs-2 text-right">$ 4.000</div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-12 mx-2">
-                            <div class="line-light"></div>
-                        </div>
-                    </div>
-                    <div class="row mt-2 list-content">
-                        <div class="col-xs-6">
-                            <p class="without-margin">Item of the invoice</p>
-                            <p class="without-margin text-muted">
-                                <small>Date: 2018-02-14</small>
-                            </p>
-                        </div>
-                        <div class="col-xs-2 text-center">$ 2.000</div>
-                        <div class="col-xs-2 text-center">2</div>
-                        <div class="col-xs-2 text-right">$ 4.000</div>
+                        <div class="col-2 text-center">$ 2.000</div>
+                        <div class="col-2 text-center">2</div>
+                        <div class="col-2 text-right">$ 4.000</div>
                     </div>
                 </div>
                 <!-- end items -->
@@ -381,36 +263,36 @@
                 <!-- values -->
                 <div class="values">
                     <div class="row">
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-12 my-2">
                             <div class="line"></div>
                         </div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-10 font-weight-bold">
+                        <div class="col-10 font-weight-bold">
                             SUBTOTAL
                         </div>
-                        <div class="col-xs-2 text-right font-weight-bold">$ 24.000</div>
+                        <div class="col-2 text-right font-weight-bold">$ 24.000</div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-10">
+                        <div class="col-10">
                             Discount 10%
                         </div>
-                        <div class="col-xs-2 text-right">-($ 2.400)</div>
+                        <div class="col-2 text-right">-($ 2.400)</div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-10">
+                        <div class="col-10">
                             Taxes 19%
                         </div>
-                        <div class="col-xs-2 text-right">$ 4.104</div>
-                        <div class="col-xs-12 mx-2">
+                        <div class="col-2 text-right">$ 4.104</div>
+                        <div class="col-12 my-2">
                             <div class="line-end"></div>
                         </div>
                     </div>
                     <div class="row mt-2 list-content">
-                        <div class="col-xs-9">
+                        <div class="col-9">
                             <h3 class="font-weight-bold">TOTAL</h3>
                         </div>
-                        <div class="col-xs-3 text-right">
+                        <div class="col-3 text-right">
                             <h3 class="font-weight-bold">$ 25.704</h3>
                         </div>
                     </div>
@@ -420,10 +302,10 @@
                 <!-- signature -->
                 <div class="signature my-4">
                     <div class="row">
-                        <div class="col-xs-4 col-xs-offset-8 text-right">
+                        <div class="col-4 offset-8 text-right">
                             <img src="/images/hj.png" alt="" class="img-fluid">
                         </div>
-                        <div class="col-xs-12 text-right">
+                        <div class="col-12 text-right">
                             <h4 class="font-weight-bold">John Doe</h4>
                             <span class="d-block font-weight-light">CEO</span>
                         </div>
@@ -435,7 +317,7 @@
                 <div class="gratitude text-center my-4">
                     <p class="text-muted">If you have any question about this invoice, please contact John Doe to email
                         jhon@mycompany.com, or to the mobile phone (057) 310 671 3456.</p>
-                    <h3>Thank you</h3>
+                    <h2>Thank you</h2>
                 </div>
                 <!-- end gratitude -->
 
@@ -453,8 +335,12 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
         crossorigin="anonymous"></script>
-    <script type="text/javascript"
-        src="https://stackpath.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
